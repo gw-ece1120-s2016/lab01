@@ -30,7 +30,27 @@ to sign up for a Cloud9 account. First, visit https://c9.io then click
 on the icon that lets you sign in with GitHub. Once you have logged in
 with your account, create a *PRIVATE* workspace called "work".
 
+## Clone your submission repository
+
+This step must be done after TA created said repo. So, make sure you call your TA and let him know about your github account.
+
+In the main directory of your c9 home run the following command:
+
+```
+$ git clone https://github.com/gw-ece1120-s2016/<your_gw_name>_assignments
+```
+
+This command should create a folder named <your_gw_name>_submissions. Change to that directory using cd command:
+
+```
+$ cd engin_assignments
+```
+
+We will manage your homework submissions using git. All the lab assignments must be inside this folder for the rest of the semester. 
+
 ## Use git to clone the Lab 1 assignment.
+
+***Make sure you are inside your assignments folder.***
 
 From the cloud9 command-line, use the git source code control tool to
 make a copy of the starter source code for this assignment.
@@ -48,6 +68,22 @@ remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
 Unpacking objects: 100% (4/4), done.
 Checking connectivity... done.
 ```
+
+#### Do some house keeping before proceeding
+
+Remove .git folder from the assignment:
+
+```
+$ rm -rf lab01/.git
+```
+
+Make sure git tracks your progress on the assignment:
+
+```
+$ git add lab01/*
+```
+
+These steps are crucial for correct submission. We are not responsible for worng submissions, therefore please feel free to ask TA for clarification or confirmation.
 
 ## Build the starter program for the lab 1 assignment
 
@@ -117,3 +153,20 @@ depth, and volume. Assume the height is 11, the depth is 14, and the
 width is 7. Add a comment to describe what this section of your
 code is doing.
 
+## Submission procedure
+
+You have to "commit" changes you made in the assignment. In order to do that run:
+
+```
+$ git commit -am "Write some submission message here"
+```
+
+This will only update your local repository, meaning that nothing will be updated on github. You have to "push" your changes in order to do that:
+
+```
+$ git push origin master
+```
+
+Make sure you didn't receive any errors in the output.
+
+You can check the organization page on github for correct submission. Go to your own assignments repo, and make sure all the files are updated with the changes you made.
