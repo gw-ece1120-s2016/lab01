@@ -37,7 +37,7 @@ This step must be done after TA created said repo. So, make sure you call your T
 In the main directory of your c9 home run the following command:
 
 ```
-$ git clone https://github.com/gw-ece1120-s2016/<your_gw_name>_assignments
+$ git clone https://github.com/gw-ece1120-s2016/<your_github_id>_assignment
 ```
 
 This command should create a folder named <your_gw_name>_submissions. Change to that directory using cd command:
