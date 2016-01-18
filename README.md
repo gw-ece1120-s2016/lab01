@@ -43,7 +43,7 @@ $ git clone https://github.com/gw-ece1120-s2016/your_github_id_assignment
 This command should create a folder named <your_gw_name>_submissions. Change to that directory using cd command:
 
 ```
-$ cd engin_assignments
+$ cd engin_assignment
 ```
 
 We will manage your homework submissions using git. All the lab assignments must be inside this folder for the rest of the semester. 
