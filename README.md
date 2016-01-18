@@ -40,7 +40,7 @@ In the main directory of your c9 home run the following command:
 $ git clone https://github.com/gw-ece1120-s2016/your_github_id_assignment
 ```
 
-This command should create a folder named <your_gw_name>_submissions. Change to that directory using cd command:
+This command should create a folder named your_github_id_submissions. Change to that directory using cd command, for example:
 
 ```
 $ cd engin_assignment
