@@ -56,7 +56,7 @@ From the cloud9 command-line, use the git source code control tool to
 make a copy of the starter source code for this assignment.
 
 ```
-randomstudent@work:~/workspace $ git clone https://github.com/gw-ece1120-s2016/lab01
+$ git clone https://github.com/gw-ece1120-s2016/lab01
 ```
 
 You should see some output similar to this:
@@ -77,11 +77,7 @@ Remove .git folder from the assignment:
 $ rm -rf lab01/.git
 ```
 
-Make sure git tracks your progress on the assignment:
 
-```
-$ git add lab01/*
-```
 
 These steps are crucial for correct submission. We are not responsible for worng submissions, therefore please feel free to ask TA for clarification or confirmation.
 
@@ -96,7 +92,7 @@ cd lab01
 Build your first program from the source code by running "make":
 
 ```
-randomstudent@work:~/workspace $ make
+$ make
 ```
 
 You should see some output similar to this:
@@ -106,7 +102,7 @@ cc -Wall    hello.c   -o hello
 
 Finally run your first C program:
 ```
-randomstudent@work:~/workspace $ ./hello
+$ ./hello
 Hello world!
 ```
 
@@ -154,6 +150,11 @@ width is 7. Add a comment to describe what this section of your
 code is doing.
 
 ## Submission procedure
+
+Make sure git tracks your progress on the assignment:
+```
+$ git add *
+```
 
 You have to "commit" changes you made in the assignment. In order to do that run:
 
